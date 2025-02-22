@@ -23,12 +23,7 @@ type apiConfig struct {
 	port             string
 }
 
-type thumbnail struct {
-	data      []byte
-	mediaType string
-}
-
-var allowedTypes = map[string]string{
+var allowedImageTypes = map[string]string{
 	"image/png":  "png",
 	"image/jpg":  "jpg",
 	"image/jpeg": "jpeg",
