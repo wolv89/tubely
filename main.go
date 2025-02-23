@@ -37,6 +37,11 @@ var allowedVideoTypes = map[string]string{
 	"video/mp4": "mp4",
 }
 
+var allowedVideoAspectRatios = map[string]string{
+	"16:9": "landscape",
+	"9:16": "portrait",
+}
+
 func main() {
 	godotenv.Load(".env")
 
